@@ -46,6 +46,16 @@ class MyHomePage extends StatelessWidget {
                 backgroundImage: AssetImage('assets/car.jpg'),
                 backgroundColor: Colors.white,
               ),
+              otherAccountsPictures: [
+                CircleAvatar(
+                  backgroundImage: AssetImage('assets/castle.jpg'),
+                  backgroundColor: Colors.white,
+                ),
+                CircleAvatar(
+                  backgroundImage: AssetImage('assets/castle.jpg'),
+                  backgroundColor: Colors.white,
+                ),
+              ],
               accountName: Text('Jinny'),
               accountEmail: Text('jj8289@naver.com'),
               onDetailsPressed: () {
@@ -58,9 +68,44 @@ class MyHomePage extends StatelessWidget {
                     bottomRight: Radius.circular(40.0),
                   )),
             ),
+            ListTile(
+              leading: Icon(
+                Icons.home,
+                color: Colors.grey[850],
+              ),
+              title: Text('Home'),
+              onTap: () {
+                print('Home is clicked');
+              },
+              trailing: Icon(Icons.add),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.settings,
+                color: Colors.grey[850],
+              ),
+              title: Text('Setting'),
+              onTap: () {
+                print('Setting is clicked');
+              },
+              trailing: Icon(Icons.add),
+            ),
+            ListTile(
+              leading: Icon(
+                Icons.question_answer,
+                color: Colors.grey[850],
+              ),
+              title: Text('Q&A'),
+              onTap: () {
+                print('Q&A is clicked');
+              },
+              trailing: Icon(Icons.add),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
+// 코딩 쉐프 16 시작!
